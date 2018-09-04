@@ -6,12 +6,73 @@ block variables
 	- var bodyclass = 'home'
 
 block body
-	section.home
+	section.home_banner
+		.item
+			.title
+				.container
+					.row
+						.col-md-7
+							h1 Chúng tôi là
+								br 
+								|Fullstack Việt Nam
+							p Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+							a(href="#")
+								btn.btn-banner(type='button') XEM CHI TIẾT
+	section.home_slide_khoang
+		.container
+			.col.owl-carousel.owl-theme
+				- for(i=0;i<3;i++)
+					a(href="#")
+						.item
+							img(src="./img/banner_1.png", alt="#")
+							.title 
+								h3 USA'S HOTTEST JEANS
+								p SHOPPING NOW
+	section.home_quancao
 		.container
 			.row
 				.col
-					.jumbotron.text-center.mt-4
-						h1.hidden-md-up.display-4 Awesome Bootstrap Sites!
-						h2.hidden-md-up Dễ dàng triển khai và sử dụng
-						p.lead Bộ công cụ phát triển web vô cùng mạnh mẽ dựa trên nền tảng Bootstrap.
-
+					h2 FULLSTACK VIETNAM
+			.row
+				- for(i=1;i<5;i++)
+					.col-md-3.item
+						a(href="#")
+							figure
+								.blocking
+									div
+										img(src="./img/home_product_"+i+".png", alt="#")
+								figcaption
+									h3 TRUNG TÂM ĐÀO TẠO IT CHUYÊN NGHIỆP
+									p $36.59
+	section.home_happy
+		.container
+			.row
+				.col.mb-3
+					.item
+						img(src="./img/home_panel_3.png", alt="#")
+						.info
+							h3 HẠNH PHÚC PHÍA SAU
+							p USA'S HOTTEST JEANS
+						.sale
+							span.p Sale
+							span.price 20%
+	section.home_love
+		.container
+			.row
+				.col-lg-5.mt-5.mb-3
+					figure
+						img(src="./img/home_panel_4.png", alt="")
+				.col
+					.title
+						h4 HẠNH PHÚC PHÍA SAU
+						p Want the most stylish designs in metrosexual and gay apparel? Looking for the sexiest gay outfits and pride outfits? Differio has the trendiest gay pride apparel from gay pride clothing to lgbt clothing. Shop our gay menswear collection for the hottest gay pride outfits in gay clothing for men.
+	section.home_cop
+		.container
+			.row
+				.col
+					h2 FULLSTACK VIETNAM
+			.row
+				.col.owl-carousel
+					- for(i=1;i<7;i++)
+						img(src="./img/client_"+i+".png", alt="#")
+ 

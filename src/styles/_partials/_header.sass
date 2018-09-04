@@ -4,7 +4,22 @@ header
 	.navbar-brand
 		img 
 			max-height: 1rem
+	
 	+media-breakpoint-up(md)
 		.navbar-brand
 			img 
-				max-height: 2rem
+				max-height: 4rem
+		#fullStackMenu
+				ul
+					padding-left: 154px
+					li
+						padding: 5px
+						a
+							font-size: 1.14rem
+							color: #000
+							// transition: .3s all ease-in-out
+							&:hover
+								color: #ffffff
+								background: #000000
+								transition: .3s all ease-in-out
+								border-radius: 15px 0 15px 0
